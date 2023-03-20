@@ -17,7 +17,7 @@
 	<key>Bundle version string(short)</key>
 	<string>1.0</string>
 	<key>Bundle version</key>
-	<string>1</string>
+	<string>1.0.0</string>
 	<key>Application requires iPhone enviroment</key>
 	<string>YES</string>
 	<key>Application Scene Manifest</key>

@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-/*@MainActor class DataViewModel: ObservableObject{
+@MainActor class DataViewModel: ObservableObject{
     @Published var homepages: [Homepage] = []
     
     init() {
@@ -18,17 +18,17 @@ import SwiftUI
     }
     
     func fetchAPI(completion: @escaping ([Homepage]) -> ()){
-        guard let url = URL(string: "https://jsonplaceholder.typicode.com/posts") else { return }
+        guard let url = URL(string: "https://public.syntax-institut.de/apps/batch3/Sani/saniApi.json") else { return }
         URLSession.shared.dataTask(with: url) { (data, _, _) in
-            let post = try! JSONDecoder().decode([Homepage].self, from: data!)
+            let homepage = try! JSONDecoder().decode([Homepage].self, from: data!)
             DispatchQueue.main.async {
-                completion(post)
+                completion(homepage)
             }
         }
         .resume()
     }
-}*/
-@MainActor class DataViewModel: ObservableObject {
+}
+/*@MainActor class DataViewModel: ObservableObject {
     @Published var homepages: [Homepage] = []
     
     init(){
@@ -54,5 +54,5 @@ import SwiftUI
     }
 
     
-}
+}*/
 

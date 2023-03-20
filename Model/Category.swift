@@ -8,7 +8,7 @@
 import Foundation
 
 
-struct Category: Identifiable, Hashable{
+struct Category: Identifiable, Decodable {
     let id = UUID()
     var category_de: String
     var category_en: String

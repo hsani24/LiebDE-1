@@ -6,7 +6,7 @@
 //
 
 import Foundation
-struct Homepage: Identifiable, Hashable{
+struct Homepage: Identifiable, Decodable {
     let id = UUID()
     var homapage_de: String
     var homepage_en: String
